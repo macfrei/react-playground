@@ -1,10 +1,9 @@
 import AppHeader from './AppHeader'
-import StaticHTML from './AppHeader.html'
+import React from 'react'
 
 export default {
   title: 'AppHeader',
   component: AppHeader,
 }
 
-export const HTML = () => StaticHTML
-export const JS = () => AppHeader('JS Title')
+export const defaultHeader = () => <AppHeader title="Hi Storybook" />
